@@ -137,8 +137,8 @@ img {
 
 .fotocuerpo1 {
     width: 600px;
-    padding: 24px 48px;
     justify-content: center;
+    align-items: center;
 }
 
 /*videos*/
