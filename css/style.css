@@ -17,7 +17,7 @@ Orden de selectores:
     padding: 0px;
     box-sizing: border-box;
     size: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "barlow condensed", sans-serif;
 }
 
 /*declaraciones generales*/
@@ -32,15 +32,15 @@ a {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 64px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 img {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 /*header*/
@@ -56,17 +56,27 @@ img {
     align-items: center;
 }
 
+.body {
+    background: #111;
+    color: white;
+}
+
+
 .titulo {
     /*h1*/
-    color: #5f8b83;
-    font-size: 70px;
+    color: #4CAF50;
+    font-size: 80px;
     text-align: left;
+    font-weight: bold;
+    background-image: linear-gradient(#d716c1, #4CAF50);
+    background-clip: text;
+    color: transparent;
 }
 
 .menuSuperior a {
     /*nav bar estilos*/
-    color: #5f8b83;
-    font-size: 20px;
+    color: #e278d6;
+    font-size: 24px;
 }
 
 .menuSuperior ul {
@@ -80,14 +90,14 @@ img {
 /*primera caja texto*/
 
 .tituloCuerpo {
-    color: #5f8b83;
-    font-size: 36px;
+    color: #8f1280;
+    font-size: 40px;
     justify-content: center;
     text-align: center;
 }
 
 .p1 {
-    color: #5f8b83;
+    color: rgba(25, 25, 25, 0.959);
     justify-content: center;
     text-align: center;
     max-width: 80%;
@@ -107,15 +117,41 @@ img {
 .cajaflexCuerpo2 {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 32px;
 }
 
-.cajaCuerpo2 {
-    color: #5f8b83;
+.contenedorTarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cancionesFavoritas .contenedorTarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.tarjetaMusica {
+    color: rgba(255, 255, 255, 0.683);
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
+
+#publicacionesGente .contenedorTarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.tarjetaPublica {
+    color: rgba(255, 255, 255, 0.683);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 
 .justifyCenter {
     display: flex;
@@ -129,17 +165,44 @@ img {
 
 /*imágenes*/
 
-.fotoentrada {
-    width: 600px;
-    justify-content: center;
-    align-items: center;
+
+#presentacion {
+    background-image: linear-gradient(transparent, white), url(../img/pared-colores.jpg);
+    background-size: cover;
+    height: auto;
 }
 
-.fotocuerpo1 {
-    width: 600px;
-    justify-content: center;
-    align-items: center;
+#grunge {
+    background: linear-gradient(transparent, white), url(../img/pared-colores.jpg);
+    background-size: cover;
+    height: 80vh;
 }
+
+#formulariopublicar {
+    background: linear-gradient(transparent, white), url(../img/pared-colores.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+#buscarbanda {
+    background: linear-gradient(transparent, white), url(../img/pared-colores.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+#formulariocontacto {
+    background: linear-gradient(transparent, white), url(../img/pared-colores.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+#quieresopinar {
+    background: linear-gradient(transparent, white), url(../img/pared-colores.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+
 
 /*videos*/
 .videos {
@@ -150,9 +213,20 @@ img {
 
 /*componentes*/
 
-.boton {
-    color: #800303;
-    border: 2px solid #800303;
+.botonfondonegro {
+    color: #8f1280;
+    border: 2px solid #8f1280;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 16px;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.botonfondoblanco {
+    color: #8f1280;
+    border: 2px solid #8f1280;
     font-size: 16px;
     padding: 8px 10px;
     border-radius: 16px;
@@ -198,9 +272,15 @@ img {
     font-size: 36px;
 }
 
+@media (min-width:768px) and (max-width:1024px) {
+    #cancionesFavoritas .contenedorTarjetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+}
 
-
-@media (max-width:760px) {
+@media (max-width:767px) {
     .header {
         display: flex;
         flex-direction: column;
@@ -217,12 +297,18 @@ img {
     }
 
     .menuSuperior a {
-    font-size: 12px;    
+        font-size: 12px;
     }
 
     .cajaflexCuerpo2 {
         display: flex;
         flex-direction: column;
         gap: 24px;
+    }
+
+    #cancionesFavoritas .contenedorTarjetas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 }
