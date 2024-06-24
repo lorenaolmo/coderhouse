@@ -17,16 +17,33 @@
 <body>
 
     <header class="header">
-        <h1 class="titulo">eskarba</h1>
+        <nav class="navbar">
+            <div>
+                <h1 class="navbar_titulo">eskarba</h1>
+            </div>
+            <div class="navbar_ordenador">
+                <ul class="navbar_list">
+                    <li class="navbar-item"><a href="./index.html">Inicio</a></li>
+                    <li class="navbar-item"><a href="./pages/sobre_mi.html">Sobre mí</a></li>
+                    <li class="navbar-item"><a href="./pages/publica.html">Publica</a></li>
+                    <li class="navbar-item"><a href="./pages/escucha.html">Escucha</a></li>
+                    <li class="navbar-item"><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
 
-        <nav class="menuSuperior">
-            <ul class="listamenu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sobre_mi.html">Sobre mí</a></li>
-                <li><a href="./pages/publica.html">Publica</a></li>
-                <li><a href="./pages/escucha.html">Escucha</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+            <!--futuro menú hamburguesa-->
+            <!--<button class="burguer">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="navbar_mobile">
+                <ul class="listamenu_mobile">
+                    <li class="nav-item_mobile"><a href="./index.html">Inicio</a></li>
+                    <li class="nav-item_mobile"><a href="./pages/sobre_mi.html">Sobre mí</a></li>
+                    <li class="nav-item_mobile"><a href="./pages/publica.html">Publica</a></li>
+                    <li class="nav-item_mobile"><a href="./pages/escucha.html">Escucha</a></li>
+                    <li class="nav-item_mobile"><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>-->
         </nav>
     </header>
 
@@ -50,8 +67,9 @@
 
         <section id="temazos" class="cuerpo2">
             <h2 class="tituloCuerpo">temazos de ayer y de hoy</h2>
-            <div class="cajaflexCuerpo2">
+            <div class="contenedorTarjetas">
                 <article class="tarjetaMusica">
+                    <h3>Riot Grrrls</h3>
                     <p>Kathleen Hanna no solo fue líder de la mítica banda de punk feminista Bikini Kill, sino también
                         un icono de todo el movimiento punk internacional y de las Riot Grrrl de los 90. Su carrera
                         musical continuó como solista en The Julie Ruin después de formar la banda Le Tigre, pero nadie
@@ -66,6 +84,7 @@
                     </div>
                 </article>
                 <article class="tarjetaMusica">
+                    <h3>La mejor versión de Iggy Pop</h3>
                     <p>Las Vulpes marcaron un himno de rebeldía en los años 80 en una España que resurgía de la
                         dictadura copiando las modas musicales del punk inglés. "Me gusta ser una zorra" versión de la
                         canción de Iggy Pop, todavía suena en los garitos. La primera banda nacional de punk formada por
