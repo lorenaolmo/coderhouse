@@ -138,6 +138,7 @@ img {
   color: rgba(255, 255, 255, 0.683);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
@@ -163,8 +164,8 @@ img {
 }
 
 /*componentes*/
-.botonfondonegro {
-  color: #8f1280;
+.boton {
+  color:  #8f1280;
   border: 2px solid #8f1280;
   font-size: 16px;
   padding: 8px 10px;
@@ -172,17 +173,13 @@ img {
   justify-content: center;
   text-align: center;
   align-self: center;
+  background:none;
 }
 
-.botonfondoblanco {
-  color: #8f1280;
-  border: 2px solid #8f1280;
-  font-size: 16px;
-  padding: 8px 10px;
-  border-radius: 16px;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
+.boton:hover {
+  color:  #640c5a;
+  border: 2px solid #640c5a;
+  background: #8f12801e;
 }
 
 .pie {
@@ -211,6 +208,49 @@ img {
 .pie .boton-tw {
   color: #1DA1F2;
   font-size: 36px;
+}
+
+
+/*botones e inputs formularios y lista desplegable*/
+
+.formulariocolumn{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.formulariorow{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.inputTexto {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label{
+  font-family: "barlow condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+input, textarea, select{
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: 1px solid rgb(105, 105, 105);
+  font-family: "barlow condensed", sans-serif;
+  font-size: 14px;
+}
+
+.dosbotones {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
